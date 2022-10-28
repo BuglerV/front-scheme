@@ -1,0 +1,55 @@
+$mainBackgroundColor: #070707;
+
+$stepOneBgColor: #6E20D5;
+$stepOneBgColorDark: #501C93;
+$stepTwoBgColor: #0B9595;
+$stepTwoBgColorDark: #077A7A;
+$stepThreeBgColor: #D629A5;
+$stepThreeBgColorDark: #B41888;
+$stepFourBgColor: #298DD6;
+$stepFourBgColorDark: #2676AF;
+$stepFiveBgColor: #0B9521;
+$stepFiveBgColorDark: #0F751F;
+
+$bigTextColor: #D9D9D9;
+$mainGrayColor: #565656;
+$priseButtonColor: #FFCA2A;
+
+body {
+	min-height: 100vh;
+	background-color: $mainBackgroundColor;
+	line-height: normal;
+	font-family: Gilroy;
+}
+
+@import "fonts";
+@import "header";
+@import "level";
+@import "person";
+@import "finish";
+@import "footer";
+
+
+.big-text {
+	font-size: 200px;
+	font-weight: 900;
+	color: $bigTextColor;
+}
+@media (max-width: 991px){
+	.big-text {
+		font-size: 160px;
+	}
+}
+@media (max-width: 767px){
+	.big-text {
+		font-size: 20vw;
+	}
+}
+
+.dash-border {
+	height: 3px;
+	background-image: linear-gradient(to right, $mainGrayColor 80%, rgba(255,255,255,0) 0%);
+	background-position: bottom;
+	background-size: 40px 2px;
+	background-repeat: repeat-x;
+}
